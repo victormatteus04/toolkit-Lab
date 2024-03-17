@@ -47,7 +47,7 @@ echo "Enter the full path of the folder to mount in the container:"
 read HOST_FOLDER_PATH
 
 # Define the container's folder path where the host folder will be mounted
-CONTAINER_FOLDER_PATH="/root"  # Consider using a non-root path for better security practices
+CONTAINER_FOLDER_PATH="/home/"
 
 # Run the Docker container with the selected image and configurations for GUI applications
 docker run -it \
