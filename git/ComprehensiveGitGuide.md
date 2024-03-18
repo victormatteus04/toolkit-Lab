@@ -20,8 +20,7 @@ This document provides a detailed guide on using Git, a powerful version control
 - [Hooks: Automating Git Tasks](#hooks)
 - [Rebasing: Linear History](#rebasing)
 - [Advanced Merge Strategies](#advanced-merge-strategies)
-- [Clone a Specific Subdirectory from a Repository](#clone-subdirectory)
-
+- [Clone a Specific Subdirectory from a Repository](#clone-a-specific-subdirectory-from-a-repository)
 
 ## [Conclusion](#conclusion)
 
@@ -149,10 +148,11 @@ This document provides a detailed guide on using Git, a powerful version control
 ## Clone a Specific Subdirectory from a Repository
 - **Purpose:** Clone only a specific subdirectory from a repository.
 - **Usage:** 
-- `git clone --depth 1 --branch INSERT_BRANCH_NAME --no-checkout INSERT_REPO_REMOTE_URL`: Clone the repository without checking out the files.
-- `cd INSERT_ROOT_FOLDER/`: Change directory to the root folder of the repository.
-- `git sparse-checkout set INSERT_SUBDIRECTORY_RELATIVE-PAT`: Set the subdirectory to be checked out.
-- `git checkout`: Check out the subdirectory.
+  - `git clone --depth 1 --branch INSERT_BRANCH_NAME --no-checkout INSERT_REPO_REMOTE_URL`: Clone the repository without checking out the files.
+  - `cd INSERT_ROOT_FOLDER/`: Change directory to the root folder of the repository.
+  - `git sparse-checkout set INSERT_SUBDIRECTORY_RELATIVE-PAT`: Set the subdirectory to be checked out.
+  - `git checkout`: Check out the subdirectory.
+- **Benefits:** Useful for large repositories where you only need a specific subdirectory.
 
 # Conclusion
 
