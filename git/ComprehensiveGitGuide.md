@@ -14,13 +14,14 @@ This document provides a detailed guide on using Git, a powerful version control
 - [Examining History and Differences](#examining-history)
 - [Stashing and Tagging](#stashing-and-tagging)
 - [Understanding .gitignore](#gitignore)
-
 ## [Part 3: Extended Git Features](#extended-git-features)
 - [Submodules: Managing External Projects](#submodules)
 - [Sub-trees: Dependency Management](#sub-trees)
 - [Hooks: Automating Git Tasks](#hooks)
 - [Rebasing: Linear History](#rebasing)
 - [Advanced Merge Strategies](#advanced-merge-strategies)
+- [Clone a Specific Subdirectory from a Repository](#clone-subdirectory)
+
 
 ## [Conclusion](#conclusion)
 
@@ -145,6 +146,13 @@ This document provides a detailed guide on using Git, a powerful version control
   - `git merge --squash`: Combines all changes into a single commit.
 - **Benefits:** Allows for more control over the merge process and commit history.
 
+## Clone a Specific Subdirectory from a Repository
+- **Purpose:** Clone only a specific subdirectory from a repository.
+- **Usage:** 
+- `git clone --depth 1 --branch INSERT_BRANCH_NAME --no-checkout INSERT_REPO_REMOTE_URL`: Clone the repository without checking out the files.
+- `cd INSERT_ROOT_FOLDER/`: Change directory to the root folder of the repository.
+- `git sparse-checkout set INSERT_SUBDIRECTORY_RELATIVE-PAT`: Set the subdirectory to be checked out.
+- `git checkout`: Check out the subdirectory.
 
 # Conclusion
 
