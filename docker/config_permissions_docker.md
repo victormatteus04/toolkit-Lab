@@ -32,7 +32,7 @@ sudo systemctl daemon-reload
 Enable the Service to run at startup:
 
 ```sh
-    sudo systemctl enable docker-sock-permission.service
+sudo systemctl enable docker-sock-permission.service
 ```
 
 Reboot and Verify. Reboot Your System. Verify that the permissions have been set correctly:
@@ -45,6 +45,5 @@ The permissions should now be srw-rw-rw-.
 
 ```bash
 
-sudo usermod -aG docker your_username
+sudo usermod -aG docker $USER
 ```
-Replace your_username with your actual username. You will need to log out and back in for this change to take effect.
